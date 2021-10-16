@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: rgb(177, 54, 140);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    form {
+      width: 420px;
+      margin: 4rem auto;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: rgb(177, 54, 140);
+      font-size: 2rem;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    input,
+    label,
+    button,
+    textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      font-size: 0.8rem;
+    }
+
+    input,
+    textarea {
+      border-radius: 0.3rem;
+      outline: none;
+      border: 1px solid rgb(177, 54, 140);
+    }
+
+    label {
+      margin-bottom: .2rem;
+    }
+
+    input {
+      line-height: 2;
+      padding: 0.3rem;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: rgb(117, 3, 83);
+      border-width: 2px;
+    }
+
+    button {
+      line-height: 3;
+      background-color: rgb(177, 54, 140);
+      color: #fff;
+      border: none;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(204, 61, 161);
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    ::placeholder {
+      font-size: 0.65rem;
+    }
+
+    i {
+      color: rgb(177, 54, 140);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="">
+    <h2>Formulario de Contacto</h2>
+    <p>Escríbenos y en breve nos prondremos en contacto contigo.</p>
+    <label for="nombre">Nombre <i>*</i></label>
+    <input type="text" id="nombre" placeholder="Escriba su nombre" required>
+    <label for="email">Email <i>*</i></label>
+    <input type="email" id="email" placeholder="Escribe tu email" required>
+    <label for="telefono">Teléfono</label>
+    <input type="tel" id="telefono" placeholder="Escribe tu teléfono">
+    <label for="url">Sitio Web</label>
+    <input type="url" id="url" placeholder="Escriba el url de su sitio">
+    <label for="asunto">Asunto <i>*</i></label>
+    <input type="text" id="asunto" placeholder="Escrbe un asunto" required>
+    <label for="mensaje">Mensaje <i>*</i></label>
+    <textarea id="mensaje" cols="30" rows="10" placeholder="Escribe tu comentario" required></textarea>
+    <button>Enviar</button>
+  </form>
+
+</body>
+
+</html>
